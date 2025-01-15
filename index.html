@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Word Management</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Ordadministrasjon</h1>
+
+  <form id="word-form">
+    <label for="word">Ord:</label>
+    <input type="text" id="word" placeholder="Skriv inn ordet" required>
+    
+    <label for="hint">Hint:</label>
+    <input type="text" id="hint" placeholder="Skriv inn et hint" required>
+    
+    <label for="category">Kategori:</label>
+    <select id="category" required>
+      <option value="" disabled selected>Velg en kategori</option>
+      <option value="teknologi">Teknologi</option>
+      <option value="frukt">Frukt</option>
+      <option value="land">Land</option>
+    </select>
+    
+    <button type="submit">Lagre ord</button>
+  </form>
+  <h2>Eksisterende ord</h2>
+  <ul id="word-list"></ul>
+
+  <script type="module" src="index.js"></script>
+</body>
+</html>
